@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\Robot_Project.exe.config
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\Robot_Project.exe
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\Robot_Project.pdb
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\LuaInterface.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\MonoBrick.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\MonoBrickFirmware.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\MoonSharp.Interpreter.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\MoonSharp.Interpreter.pdb
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Release\MoonSharp.Interpreter.xml
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Release\Robot.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Release\Robot.csproj.CopyComplete
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Release\Robot_Project.exe
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Release\Robot_Project.pdb
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Release\Robot.csprojAssemblyReference.cache

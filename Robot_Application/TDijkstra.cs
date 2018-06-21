@@ -57,9 +57,9 @@ namespace Robot_Project.Path
 			List<TNode> Result = new List<TNode>();
 			TPoint Current = this.Position.Position;
 			TFieldSection Self = Dijkstra.Field[Current];
-			TPoint ForwardRaw = Current + new TPoint(1, 0);
+			TPoint ForwardRaw = Current - new TPoint(1, 0);
 			TPoint RightRaw = Current + new TPoint(0, 1);
-			TPoint BackwardRaw = Current - new TPoint(1, 0);
+			TPoint BackwardRaw = Current + new TPoint(1, 0);
 			TPoint LeftRaw = Current - new TPoint(0, 1);
 			int Length = Dijkstra.Field.Length;
 
@@ -74,21 +74,21 @@ namespace Robot_Project.Path
 			}
 			if (RightRaw.isValid(Length - 1) && !Self.isBlockedRaw(Constants.Direction_Right))
 			{
-				TPoint Copied = ForwardRaw;
+				TPoint Copied = RightRaw;
 				TNodeRecord Rec = new TNodeRecord(Copied.X, Copied.Y);
 				if (!Dijkstra.Nodes.nodeExists(Rec))
 					Result.Add(new TNode(Rec, Dijkstra, this));
 			}
 			if (BackwardRaw.isValid(Length - 1) && !Self.isBlockedRaw(Constants.Direction_Backward))
 			{
-				TPoint Copied = ForwardRaw;
+				TPoint Copied = BackwardRaw;
 				TNodeRecord Rec = new TNodeRecord(Copied.X, Copied.Y);
 				if (!Dijkstra.Nodes.nodeExists(Rec))
 					Result.Add(new TNode(Rec, Dijkstra, this));
 			}
 			if (LeftRaw.isValid(Length - 1) && !Self.isBlockedRaw(Constants.Direction_Left))
 			{
-				TPoint Copied = ForwardRaw;
+				TPoint Copied = LeftRaw;
 				TNodeRecord Rec = new TNodeRecord(Copied.X, Copied.Y);
 				if (!Dijkstra.Nodes.nodeExists(Rec))
 					Result.Add(new TNode(Rec, Dijkstra, this));
@@ -117,12 +117,15 @@ namespace Robot_Project.Path
 		public TPoint StartPosition;
 		public TPoint StopPosition;
 
+		public UInt32 CountSteps = 0;
+
 		public TWay Way;
 
 		public bool Search_Way()
 		{
 			// Big and difficult
 
+			CountSteps = 0;
 			TNodeRecord RecFirst = new TNodeRecord(StartPosition);
 			TNode FinishNode = null;
 			List<TNode> Storage = new List<TNode>();
@@ -134,6 +137,7 @@ namespace Robot_Project.Path
 
 			while (!Check && (Storage.Count > 0))
 			{
+				CountSteps++;
 				Maintance.Clear();
 				Maintance = Storage[0].ScanAround();
 				Storage.RemoveAt(0); // Clearing this point
@@ -162,7 +166,7 @@ namespace Robot_Project.Path
 					Current = Current.ParentNode;
 				}
 				if (Way.Count <= 0)
-					throw new Exception("Way s almost empty.");
+					throw new Exception("Way is almost empty.");
 			}
 
 			return Check;
