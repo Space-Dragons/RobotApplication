@@ -56,8 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Field.cs" />
     <Compile Include="TDijkstra.cs" />
     <Compile Include="TDirection.cs" />
+    <Compile Include="TEncoder.cs" />
+    <Compile Include="TLocator.cs" />
     <Compile Include="TLua.cs" />
     <Compile Include="TLuaSharp.cs" />
     <Compile Include="TMotion.cs" />

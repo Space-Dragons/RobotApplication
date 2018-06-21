@@ -21,3 +21,17 @@ C:\Users\admin\source\repos\Robot_Application\Robot_Application\bin\Debug\MoonSh
 C:\Users\admin\source\repos\Robot_Application\Robot_Application\bin\Debug\MoonSharp.Interpreter.pdb
 C:\Users\admin\source\repos\Robot_Application\Robot_Application\bin\Debug\MoonSharp.Interpreter.xml
 C:\Users\admin\source\repos\Robot_Application\Robot_Application\bin\Debug\MonoBrick.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\Robot_Project.exe.config
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\Robot_Project.exe
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\Robot_Project.pdb
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\LuaInterface.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\MonoBrick.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\MonoBrickFirmware.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\MoonSharp.Interpreter.dll
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\MoonSharp.Interpreter.pdb
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\bin\Debug\MoonSharp.Interpreter.xml
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Debug\Robot.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Debug\Robot.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Debug\Robot.csproj.CopyComplete
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Debug\Robot_Project.exe
+C:\Users\admin\source\repos\RobotApplication\Robot_Application\obj\Debug\Robot_Project.pdb

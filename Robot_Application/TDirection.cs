@@ -28,6 +28,13 @@ namespace Direction_Main
 
   class TDirection
   {
+		public enum TDirections
+		{
+		  Forward = 0,
+			Right = 1,
+			Backward = 2,
+			Left = 3
+		}
 		public int State = Constants.Direction_NORTH;
 
 		public void NextRight()
@@ -455,6 +462,19 @@ namespace Direction_Main
           }
         }
       }
+
+			public TClassesMatrixObject<T> Copy()
+			{
+				TClassesMatrixObject <T> Result = new TClassesMatrixObject<T>(GetLength(0), GetLength(1));
+				for (int i = 0; i < GetLength(); i++)
+				{
+					for (int k = 0; k < GetLength(1); k ++)
+					{
+						Result[i, k] = this[i, k];
+					}
+				}
+				return Result;
+			}
 
       public TClassesMatrixObject(int X = 0, int Y = 0)
       {
